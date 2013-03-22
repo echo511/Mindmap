@@ -1,0 +1,20 @@
+services:
+	Echo511AppMindmap.convertorManager: Echo511\App\Mindmap\Convertor\ConvertorManager
+
+
+	Echo511AppMindmap.structuredTxtInput:
+		class: Echo511\App\Mindmap\Convertor\Input\StructuredTxt
+		tags:
+			- Echo511AppMindmap.inputConvertor
+
+
+	Echo511AppMindmap.freemindOutput:
+		class: Echo511\App\Mindmap\Convertor\Output\Freemind
+		tags:
+			- Echo511AppMindmap.outputConvertor
+
+
+	Echo511AppMindmap.mindmupOutput:
+		class: Echo511\App\Mindmap\Convertor\Output\Mindmup
+		tags:
+			- Echo511AppMindmap.outputConvertor
